@@ -1,0 +1,121 @@
+.container {
+  flex: 1;
+  min-height: calc(100dvh - 5rem);
+  background-color: #fff;
+  padding: 5rem 0;
+  border-radius: 1rem;
+  border: 2px solid var(--color-blue-500);
+}
+
+.serachContainer,
+.weatherInfromation,
+.additionalInformation {
+  display: flex;
+}
+
+.serachContainer {
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.weatherInfromation,
+.additionalInformation {
+  flex-direction: column;
+  align-items: center;
+}
+
+.serachContainer input {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--color-grey-100);
+  border-radius: 2rem;
+  border: 1px solid var(--color-grey-400);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-grey-600);
+  letter-spacing: 0.05rem;
+}
+
+.serachContainer input::placeholder {
+  color: var(--color-grey-700);
+  letter-spacing: 0.08rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.serachContainer button {
+  background-color: transparent;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--color-blue-800);
+  line-height: 0;
+  margin-left: -3.8rem;
+  cursor: pointer;
+}
+
+.weatherInfromation {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--color-grey-300);
+  margin: 0 6rem;
+  padding-bottom: 2rem;
+}
+
+.weatherInfromation span {
+  line-height: 1;
+  font-size: 13rem;
+}
+
+.weatherInfromation p:not(:last-child) {
+  font-size: 8rem;
+  color: var(--color-grey-700);
+}
+
+.additionalInformation {
+  margin-top: 4rem;
+}
+
+.additionalInformation p {
+  letter-spacing: 0.05rem;
+}
+
+.additionalInformation p:nth-child(1) {
+  color: var(--color-grey-400);
+}
+
+.additionalInformation p:nth-child(2) {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-grey-600);
+}
+
+.additionalInformation p:nth-child(3) {
+  font-size: 4rem;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.emptyPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+  padding: 0 4rem;
+}
+
+.emptyPage img {
+  width: 25rem;
+}
+
+.emptyPage p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-grey-500);
+  letter-spacing: 0.1rem;
+}
