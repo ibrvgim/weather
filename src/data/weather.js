@@ -3,7 +3,7 @@ const API_KEY = '6d505f404b4f0f295490a63509eeaf3c';
 export async function getCityPosition(city) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`
     );
     if (!response.ok) throw new Error('Could not find city.');
 
